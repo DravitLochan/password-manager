@@ -55,11 +55,11 @@ public class FingerPrint extends AppCompatActivity {
         setContentView(R.layout.activity_finger_print);
 
         CheckFetchDetails checkFetchDetails = new CheckFetchDetails(this);
-        if(checkFetchDetails.getFirstTime()) {
+        /*if(checkFetchDetails.getFirstTime()) {
             Intent intent = new Intent(this, SetPin.class);
             startActivity(intent);
             finish();
-        }
+        }*/
         appState = new AppState(this);
         if(appState.isVerified()){
             Intent intent = new Intent(this, MainActivity.class);
